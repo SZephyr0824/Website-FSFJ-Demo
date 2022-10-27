@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>羽石飞毽 - Show&Create</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script type="text/javascript" src="../JS/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="../JS/gif.js"></script>
+</head>
+
+<body>
+    <div class="page-header-container">
+        <div class="page-header">
+            <div class="page-header-bar">
+                <ul class="left-entry">
+                    <li class="entry-element">
+                        <a href="index.html" class="left-entry-logo">
+                            <img src="../asset/index-logo.png" class="logo">
+                        </a>
+                    </li>
+                    <li class="entry-element">
+                        <a href="index.html">
+                            <span class="header-text">背景故事</span>
+                        </a>
+                    </li>
+                    <li class="entry-element">
+                        <a href="show-create.html">
+                            <span class="header-text">展示&创建</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="right-entry">
+                    <li class="entry-element">
+                        <a href="thanks.html">
+                            <span class="header-text">致谢</span>                            
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 页眉部分 -->
+
+    <div class="page-content-container">
+        <div class="page-content">
+            <div class="page-cabinet">
+                <div class="side-column-left">
+                    <p id="serie-number">#110905</p>
+                    <p id="CoOwner">Co-Owner: SZephyr</p>
+                </div>
+                <div class="exhibition">
+                    <div class="container">
+                        <img src="../asset/DoneGif/New-110905.gif">
+                        <img src="../asset/DoneGif/N-010606.gif">
+                    </div>
+                    <div class="shift">
+                        <div class="btn left" onclick="leftShift()">&lt;</div>
+                        <div class="btn right" onclick="rightShift()">&gt;</div>
+                    </div>
+                </div>
+                <div class="side-column-right"></div>
+            </div>
+        </div>
+        <!-- 展示部分 -->
+
+        <div class="page-content"><div class="splitline"></div></div>
+        <!-- 分割线 -->
+
+        <div class="page-content">
+            <h1>NFT创建</h1>
+            <div class="create-board">
+                <div class="create-tablet cabinet-left-align">
+                    <!-- <h2>背景</h2> -->
+                    <div class="choices" id="backgroundTobe">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                    </div>
+                    <!-- <h2>毽子和脱尾</h2> -->
+                    <div class="choices" id="styleTobe">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                        <img src="../asset/blankgrey.png" class="pic-not-selected">
+                    </div>
+                    <h2>初始动作选择</h2>
+                    <div class="choices">
+                        <img src="../asset/MovesStaticPics/SPic-Pan.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/SPic-Beng.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ke.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Guai.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Mo.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FB.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FI.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FH.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-BK.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FT.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Rao.png" class="pic-not-selected">
+                    </div>
+                    <h2>承接动作选择</h2>
+                    <div class="choices">
+                        <img src="../asset/MovesStaticPics/Spic-Pan-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Beng-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ke-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Guai-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Mo-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FB-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FI-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FH-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-BK-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-FT-2.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Ting-QX.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Shuai.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Rao-2.png" class="pic-not-selected">
+                    </div>
+                    <h2>终结动作选择</h2>
+                    <div class="choices">
+                        <img src="../asset/MovesStaticPics/Spic-Chuai.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Bei.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-Gou.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-TK.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-FGT.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-360.png" class="pic-not-selected">
+                        <img src="../asset/MovesStaticPics/Spic-DT.png" class="pic-not-selected">
+                    </div>
+                </div>
+                <!-- 创建左半边选择的部分 -->
+
+                <div class="create-tablet cabinet-right-align">
+                    <div class="preview-table">
+                        <div>
+                            <img src="../asset/Preview-None-Status-3.png" id="preview-Main">
+                        </div>
+                        <div class="preview-section">
+                            <h1 id="selection-text">选择记录</h1>
+                        </div>
+                        <div class="preview-section">
+                            <img src="../asset/None-Status-6.png" class="preview-moves-pic">
+                            <img src="../asset/None-Status-6.png" class="preview-moves-pic">
+                            <img src="../asset/None-Status-6.png" class="preview-moves-pic">
+                        </div>
+                        <div class="preview-section">
+                            <div class="both-align left-button" id="reset-button">
+                                <div class="icon-plus-text">
+                                    <img src="../asset/icon-reset-4x.png" class="icon">
+                                    <p>重置</p>
+                                </div>
+                            </div>
+                            <div class="both-align right-button" id="download-button">
+                                <div class="icon-plus-text">
+                                    <img src="../asset/icon-download-4x.png" class="icon">
+                                    <p>下载</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- 创建右半边预览的部分 -->
+            </div>
+        </div>
+        <!-- 创建部分 -->
+    </div>
+    <!-- 主体部分 -->
+
+    <div class="page-footer-container">
+        <img src="../asset/project-logo.png" class="footer-image">
+        <p class="footer-text">@FS·FJianzi - DeShis. All rights reserved.</p>
+    </div>
+    <!-- 页脚部分 -->
+
+    <div>
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0031.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0032.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0033.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0034.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0035.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0036.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0037.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0038.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0039.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0040.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0041.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0042.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0043.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0044.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0045.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0046.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0047.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0048.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0049.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0050.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0051.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0052.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0053.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0054.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0055.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0056.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0057.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0058.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0059.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0060.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0061.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0062.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0063.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0064.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0065.png" class="imgSeq-1-1">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Pan/0066.png" class="imgSeq-1-1">
+        </div>
+        <!-- imgSeq-1-1 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0111.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0112.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0113.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0114.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0115.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0116.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0117.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0118.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0119.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0120.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0121.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0122.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0123.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0124.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0125.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0126.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0127.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0128.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0129.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0130.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0131.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0132.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0133.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0134.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0135.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0136.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0137.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0138.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0139.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0140.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0141.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0142.png" class="imgSeq-1-2">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Beng/0143.png" class="imgSeq-1-2">
+        </div>
+        <!-- imgSeq-1-2 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0191.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0192.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0193.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0194.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0195.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0196.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0197.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0198.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0199.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0200.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0201.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0202.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0203.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0204.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0205.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0206.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0207.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0208.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0209.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0210.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0211.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0212.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0213.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0214.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0215.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0216.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0217.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0218.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0219.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0220.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0221.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0222.png" class="imgSeq-1-3">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ke/0223.png" class="imgSeq-1-3">
+        </div>
+        <!-- imgSeq-1-3 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0271.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0272.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0273.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0274.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0275.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0276.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0277.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0278.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0279.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0280.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0281.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0282.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0283.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0284.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0285.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0286.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0287.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0288.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0289.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0290.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0291.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0292.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0293.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0294.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0295.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0296.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0297.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0298.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0299.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0300.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0301.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0302.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0303.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0304.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0305.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0306.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0307.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0308.png" class="imgSeq-1-4">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Guai/0309.png" class="imgSeq-1-4">
+        </div>
+        <!-- imgSeq-1-4 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0361.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0362.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0363.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0364.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0365.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0366.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0367.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0368.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0369.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0370.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0371.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0372.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0373.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0374.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0375.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0376.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0377.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0378.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0379.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0380.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0381.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0382.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0383.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0384.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0385.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0386.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0387.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0388.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0389.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0390.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0391.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0392.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0393.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0394.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0395.png" class="imgSeq-1-5">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Mo/0396.png" class="imgSeq-1-5">
+        </div>
+        <!-- imgSeq-1-5 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0451.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0452.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0453.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0454.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0455.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0456.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0457.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0458.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0459.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0460.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0461.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0462.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0463.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0464.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0465.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0466.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0467.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0468.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0469.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0470.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0471.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0472.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0473.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0474.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0475.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0476.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0477.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0478.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0479.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0480.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0481.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0482.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0483.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0484.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0485.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0486.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0487.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0488.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0489.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0490.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0491.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0492.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0493.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0494.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0495.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0496.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0497.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0498.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0499.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0500.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0501.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0502.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0503.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0504.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0505.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0506.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0507.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0508.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0509.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0510.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0511.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0512.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0513.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0514.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0515.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0516.png" class="imgSeq-1-6">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FB/0517.png" class="imgSeq-1-6">
+        </div>
+        <!-- imgSeq-1-6 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0601.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0602.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0603.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0604.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0605.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0606.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0607.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0608.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0609.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0610.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0611.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0612.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0613.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0614.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0615.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0616.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0617.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0618.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0619.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0620.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0621.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0622.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0623.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0624.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0625.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0626.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0627.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0628.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0629.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0630.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0631.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0632.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0633.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0634.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0635.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0636.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0637.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0638.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0639.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0640.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0641.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0642.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0643.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0644.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0645.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0646.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0647.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0648.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0649.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0650.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0651.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0652.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0653.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0654.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0655.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0656.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0657.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0658.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0659.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0660.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0661.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0662.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0663.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0664.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0665.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0666.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0667.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0668.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0669.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0670.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0671.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0672.png" class="imgSeq-1-7">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FI/0673.png" class="imgSeq-1-7">
+        </div>
+        <!-- imgSeq-1-7 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0761.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0762.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0763.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0764.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0765.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0766.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0767.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0768.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0769.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0770.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0771.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0772.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0773.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0774.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0775.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0776.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0777.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0778.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0779.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0780.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0781.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0782.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0783.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0784.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0785.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0786.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0787.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0788.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0789.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0790.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0791.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0792.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0793.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0794.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0795.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0796.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0797.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0798.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0799.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0800.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0801.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0802.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0803.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0804.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0805.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0806.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0807.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0808.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0809.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0810.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0811.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0812.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0813.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0814.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0815.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0816.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0817.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0818.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0819.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0820.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0821.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0822.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0823.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0824.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0825.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0826.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0827.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0828.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0829.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0830.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0831.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0832.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0833.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0834.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0835.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0836.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0837.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0838.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0839.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0840.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0841.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0842.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0843.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0844.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0845.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0846.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0847.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0848.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0849.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0850.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0851.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0852.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0853.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0854.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0855.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0856.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0857.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0858.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0859.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0860.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0861.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0862.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0863.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0864.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0865.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0866.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0867.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0868.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0869.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0870.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0871.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0872.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0873.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0874.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0875.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0876.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0877.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0878.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0879.png" class="imgSeq-1-8">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FH/0880.png" class="imgSeq-1-8">
+        </div>
+        <!-- imgSeq-1-8 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1001.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1002.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1003.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1004.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1005.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1006.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1007.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1008.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1009.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1010.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1011.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1012.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1013.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1014.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1015.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1016.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1017.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1018.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1019.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1020.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1021.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1022.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1023.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1024.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1025.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1026.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1027.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1028.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1029.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1030.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1031.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1032.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1033.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1034.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1035.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1036.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1037.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1038.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1039.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1040.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1041.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1042.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1043.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1044.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1045.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1046.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1047.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1048.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1049.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1050.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1051.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1052.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1053.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1054.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1055.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1056.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1057.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1058.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1059.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1060.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1061.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1062.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1063.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1064.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1065.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1066.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1067.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1068.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1069.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1070.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1071.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1072.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1073.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1074.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1075.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1076.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1077.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1078.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1079.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1080.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1081.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1082.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1083.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1084.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1085.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1086.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1087.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1088.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1089.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1090.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1091.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1092.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1093.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1094.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1095.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1096.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1097.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1098.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1099.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1100.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1101.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1102.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1103.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1104.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1105.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1106.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1107.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1108.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1109.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1110.png" class="imgSeq-1-9">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-BK/1111.png" class="imgSeq-1-9">
+        </div>
+        <!-- imgSeq-1-9 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1271.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1272.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1273.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1274.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1275.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1276.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1277.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1278.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1279.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1280.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1281.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1282.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1283.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1284.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1285.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1286.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1287.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1288.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1289.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1290.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1291.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1292.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1293.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1294.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1295.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1296.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1297.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1298.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1299.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1300.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1301.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1302.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1303.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1304.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1305.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1306.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1307.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1308.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1309.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1310.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1311.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1312.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1313.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1314.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1315.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1316.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1317.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1318.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1319.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1320.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1321.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1322.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1323.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1324.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1325.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1326.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1327.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1328.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1329.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1330.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1331.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1332.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1333.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1334.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1335.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1336.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1337.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1338.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1339.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1340.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1341.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1342.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1343.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1344.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1345.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1346.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1347.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1348.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1349.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1350.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1351.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1352.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1353.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1354.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1355.png" class="imgSeq-1-10">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Ting-FT/1356.png" class="imgSeq-1-10">
+        </div>
+        <!-- imgSeq-1-10 -->
+
+        <div class="seqContainer"
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2001.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2002.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2003.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2004.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2005.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2006.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2007.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2008.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2009.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2010.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2011.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2012.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2013.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2014.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2015.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2016.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2017.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2018.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2019.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2020.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2021.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2022.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2023.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2024.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2025.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2026.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2027.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2028.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2029.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2030.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2031.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2032.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2033.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2034.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2035.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2036.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2037.png" class="imgSeq-1-11">
+            <img src="../asset/MovesPngSequency/MPSS1/S1-Rao/2038.png" class="imgSeq-1-11">
+        </div>
+        <!-- imgSeq-1-11 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0067.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0068.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0069.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0070.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0071.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0072.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0073.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0074.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0075.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0076.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0077.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0078.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0079.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0080.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0081.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0082.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0083.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0084.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0085.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0086.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0087.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0088.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0089.png" class="imgSeq-2-1">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Pan/0090.png" class="imgSeq-2-1">
+        </div>
+        <!-- imgSeq-2-1 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0144.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0145.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0146.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0147.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0148.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0149.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0150.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0151.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0152.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0153.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0154.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0155.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0156.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0157.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0158.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0159.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0160.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0161.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0162.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0163.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0164.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0165.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0166.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0167.png" class="imgSeq-2-2">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Beng/0168.png" class="imgSeq-2-2">
+        </div>
+        <!-- imgSeq-2-2 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0224.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0225.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0226.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0227.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0228.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0229.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0230.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0231.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0232.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0233.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0234.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0235.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0236.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0237.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0238.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0239.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0240.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0241.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0242.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0243.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0244.png" class="imgSeq-2-3">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ke/0245.png" class="imgSeq-2-3">
+        </div>
+        <!-- imgSeq-2-3 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0310.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0311.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0312.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0313.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0314.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0315.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0316.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0317.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0318.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0319.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0320.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0321.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0322.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0323.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0324.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0325.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0326.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0327.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0328.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0329.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0330.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0331.png" class="imgSeq-2-4">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Guai/0332.png" class="imgSeq-2-4">
+        </div>
+        <!-- imgSeq-2-4 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0408.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0409.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0410.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0411.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0412.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0413.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0414.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0415.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0416.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0417.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0418.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0419.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0420.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0421.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0422.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0423.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0424.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0425.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0426.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0427.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0428.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0429.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0430.png" class="imgSeq-2-5">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Mo/0431.png" class="imgSeq-2-5">
+        </div>
+        <!-- imgSeq-2-5 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0518.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0519.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0520.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0521.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0522.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0523.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0524.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0525.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0526.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0527.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0528.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0529.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0530.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0531.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0532.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0533.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0534.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0535.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0536.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0537.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0538.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0539.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0540.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0541.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0542.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0543.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0544.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0545.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0546.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0547.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0548.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0549.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0550.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0551.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0552.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0553.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0554.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0555.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0556.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0557.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0558.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0559.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0560.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0561.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0562.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0563.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0564.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0565.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0566.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0567.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0568.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0569.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0570.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0571.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0572.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0573.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0574.png" class="imgseq-2-6">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FB/0575.png" class="imgseq-2-6">
+        </div>
+        <!-- imgSeq-2-6 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0674.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0675.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0676.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0677.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0678.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0679.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0680.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0681.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0682.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0683.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0684.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0685.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0686.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0687.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0688.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0689.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0690.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0691.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0692.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0693.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0694.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0695.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0696.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0697.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0698.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0699.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0700.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0701.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0702.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0703.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0704.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0705.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0706.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0707.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0708.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0709.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0710.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0711.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0712.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0713.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0714.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0715.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0716.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0717.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0718.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0719.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0720.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0721.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0722.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0723.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0724.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0725.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0726.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0727.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0728.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0729.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0730.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0731.png" class="imgSeq-2-7">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FI/0732.png" class="imgSeq-2-7">
+        </div>
+        <!-- imgSeq-2-7 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0892.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0893.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0894.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0895.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0896.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0897.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0898.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0899.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0900.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0901.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0902.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0903.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0904.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0905.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0906.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0907.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0908.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0909.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0910.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0911.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0912.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0913.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0914.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0915.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0916.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0917.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0918.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0919.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0920.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0921.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0922.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0923.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0924.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0925.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0926.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0927.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0928.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0929.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0930.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0931.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0932.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0933.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0934.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0935.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0936.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0937.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0938.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0939.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0940.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0941.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0942.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0943.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0944.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0945.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0946.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0947.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0948.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0949.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0950.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0951.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0952.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0953.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0954.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0955.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0956.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0957.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0958.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0959.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0960.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0961.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0962.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0963.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0964.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0965.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0966.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0967.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0968.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0969.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0970.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0971.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0972.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0973.png" class="imgSeq-2-8">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FH/0974.png" class="imgSeq-2-8">
+        </div>
+        <!-- imgSeq-2-8 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1112.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1113.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1114.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1115.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1116.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1117.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1118.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1119.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1120.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1121.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1122.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1123.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1124.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1125.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1126.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1127.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1128.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1129.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1130.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1131.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1132.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1133.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1134.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1135.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1136.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1137.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1138.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1139.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1140.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1141.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1142.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1143.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1144.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1145.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1146.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1147.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1148.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1149.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1150.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1151.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1152.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1153.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1154.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1155.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1156.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1157.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1158.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1159.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1160.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1161.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1162.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1163.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1164.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1165.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1166.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1167.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1168.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1169.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1170.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1171.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1172.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1173.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1174.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1175.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1176.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1177.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1178.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1179.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1180.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1181.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1182.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1183.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1184.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1185.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1186.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1187.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1188.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1189.png" class="imgSeq-2-9">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-BK/1190.png" class="imgSeq-2-9">
+        </div>
+        <!-- imgSeq-2-9 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1357.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1358.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1359.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1360.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1361.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1362.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1363.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1364.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1365.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1366.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1367.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1368.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1369.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1370.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1371.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1372.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1373.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1374.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1375.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1376.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1377.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1378.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1379.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1380.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1381.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1382.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1383.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1384.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1385.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1386.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1387.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1388.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1389.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1390.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1391.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1392.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1393.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1394.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1395.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1396.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1397.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1398.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1399.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1400.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1401.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1402.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1403.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1404.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1405.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1406.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1407.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1408.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1409.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1410.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1411.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1412.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1413.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1414.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1415.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1416.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1417.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1418.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1419.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1420.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1421.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1422.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1423.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1424.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1425.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1426.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1427.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1428.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1429.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1430.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1431.png" class="imgSeq-2-10">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-FT/1432.png" class="imgSeq-2-10">
+        </div>
+        <!-- imgSeq-2-10 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1452.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1453.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1454.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1455.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1456.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1457.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1458.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1459.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1460.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1461.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1462.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1463.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1464.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1465.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1466.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1467.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1468.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1469.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1470.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1471.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1472.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1473.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1474.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1475.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1476.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1477.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1478.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1479.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1480.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1481.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1482.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1483.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1484.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1485.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1486.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1487.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1488.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1489.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1490.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1491.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1492.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1493.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1494.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1495.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1496.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1497.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1498.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1499.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1500.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1501.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1502.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1503.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1504.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1505.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1506.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1507.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1508.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1509.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1510.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1511.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1512.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1513.png" class="imgSeq-2-11">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Ting-QX/1514.png" class="imgSeq-2-11">
+        </div>
+        <!-- imgSeq-2-11 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1532.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1533.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1534.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1535.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1536.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1537.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1538.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1539.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1540.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1541.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1542.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1543.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1544.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1545.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1546.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1547.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1548.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1549.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1550.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1551.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1552.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1553.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1554.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1555.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1556.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1557.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1558.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1559.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1560.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1561.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1562.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1563.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1564.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1565.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1566.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1567.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1568.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1569.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1570.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1571.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1572.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1573.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1574.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1575.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1576.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1577.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1578.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1579.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1580.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1581.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1582.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1583.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1584.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1585.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1586.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1587.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1588.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1589.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1590.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1591.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1592.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1593.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1594.png" class="imgSeq-2-12">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Shuai/1595.png" class="imgSeq-2-12">
+        </div>
+        <!-- imgSeq-2-12 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2039.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2040.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2041.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2042.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2043.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2044.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2045.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2046.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2047.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2048.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2049.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2050.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2051.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2052.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2053.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2054.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2055.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2056.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2057.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2058.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2059.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2060.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2061.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2062.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2063.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2064.png" class="imgSeq-2-13">
+            <img src="../asset/MovesPngSequency/MPSS2/S2-Rao/2065.png" class="imgSeq-2-13">
+        </div>
+        <!-- imgSeq-2-13 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1212.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1213.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1214.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1215.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1216.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1217.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1218.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1219.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1220.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1221.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1222.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1223.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1224.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1225.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1226.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1227.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1228.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1229.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1230.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1231.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1232.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1233.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1234.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1235.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1236.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1237.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1238.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1239.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1240.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1241.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1242.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1243.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1244.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1245.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1246.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1247.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1248.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1249.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1250.png" class="imgSeq-3-1">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Chuai/1251.png" class="imgSeq-3-1">
+        </div>
+        <!-- imgSeq-3-1 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1612.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1613.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1614.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1615.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1616.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1617.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1618.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1619.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1620.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1621.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1622.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1623.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1624.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1625.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1626.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1627.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1628.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1629.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1630.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1631.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1632.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1633.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1634.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1635.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1636.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1637.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1638.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1639.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1640.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1641.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1642.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1643.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1644.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1645.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1646.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1647.png" class="imgSeq-3-2">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Bei/1648.png" class="imgSeq-3-2">
+        </div>
+        <!-- imgSeq-3-2 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1662.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1663.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1664.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1665.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1666.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1667.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1668.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1669.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1670.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1671.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1672.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1673.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1674.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1675.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1676.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1677.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1678.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1679.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1680.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1681.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1682.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1683.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1684.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1685.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1686.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1687.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1688.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1689.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1690.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1691.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1692.png" class="imgSeq-3-3">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-Gou/1693.png" class="imgSeq-3-3">
+        </div>
+        <!-- imgSeq-3-3 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1712.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1713.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1714.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1715.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1716.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1717.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1718.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1719.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1720.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1721.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1722.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1723.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1724.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1725.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1726.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1727.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1728.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1729.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1730.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1731.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1732.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1733.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1734.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1735.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1736.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1737.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1738.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1739.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1740.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1741.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1742.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1743.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1744.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1745.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1746.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1747.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1748.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1749.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1750.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1751.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1752.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1753.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1754.png" class="imgSeq-3-4">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-TK/1755.png" class="imgSeq-3-4">
+        </div>
+        <!-- imgSeq-3-4 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1772.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1773.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1774.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1775.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1776.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1777.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1778.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1779.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1780.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1781.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1782.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1783.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1784.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1785.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1786.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1787.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1788.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1789.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1790.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1791.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1792.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1793.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1794.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1795.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1796.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1797.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1798.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1799.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1800.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1801.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1802.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1803.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1804.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1805.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1806.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1807.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1808.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1809.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1810.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1811.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1812.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1813.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1814.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1815.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1816.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1817.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1818.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1819.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1820.png" class="imgSeq-3-5">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-FGT/1821.png" class="imgSeq-3-5">
+        </div>
+        <!-- imgSeq-3-5 -->
+        
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1842.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1843.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1844.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1845.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1846.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1847.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1848.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1849.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1850.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1851.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1852.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1853.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1854.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1855.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1856.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1857.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1858.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1859.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1860.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1861.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1862.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1863.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1864.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1865.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1866.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1867.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1868.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1869.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1870.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1871.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1872.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1873.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1874.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1875.png" class="imgSeq-3-6">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-360/1876.png" class="imgSeq-3-6">
+        </div>
+        <!-- imgSeq-3-6 -->
+
+        <div class="seqContainer">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1902.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1903.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1904.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1905.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1906.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1907.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1908.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1909.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1910.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1911.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1912.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1913.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1914.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1915.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1916.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1917.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1918.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1919.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1920.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1921.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1922.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1923.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1924.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1925.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1926.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1927.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1928.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1929.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1930.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1931.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1932.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1933.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1934.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1935.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1936.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1937.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1938.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1939.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1940.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1941.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1942.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1943.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1944.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1945.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1946.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1947.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1948.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1949.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1950.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1951.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1952.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1953.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1954.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1955.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1956.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1957.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1958.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1959.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1960.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1961.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1962.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1963.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1964.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1965.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1966.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1967.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1968.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1969.png" class="imgSeq-3-7">
+            <img src="../asset/MovesPngSequency/MPSS3/S3-DT/1970.png" class="imgSeq-3-7">
+        </div>
+        <!-- imgSeq-3-7 -->
+
+    </div>
+    <!-- 愚蠢的图片存放 -->
+
+    <script>
+
+        // 显示图片下标
+        let index = 0
+
+        // 图片的数量
+        let imageCount = document.querySelectorAll(".exhibition .container img").length
+
+        //更新图片的函数
+        function refresh() {
+            if (index<0) {
+                index = imageCount - 1
+                // 自动轮播的话，这里应该可以没有
+            } else if (index >= imageCount) {
+                index = 0
+            }
+
+            let carousel = document.querySelector(".exhibition")
+            let width = getComputedStyle(carousel).width
+            width = Number(width.slice(0,-2))
+            //这个部分的截取没有看明白
+
+            //添加修改“#XXXXXX”和“Co-Owner“内容的语句”
+            if (index == 0) {
+                document.getElementById("serie-number").innerHTML = "#110905"
+                document.getElementById("CoOwner").innerHTML = "Co-Owner:SZephyr"
+            } else if (index == 1){
+                document.getElementById("serie-number").innerHTML = "#010606"
+                document.getElementById("CoOwner").innerHTML = "Co-Owner:DeShis"
+            }
+
+            carousel.querySelector(".container").style.left = index * width * -1 + "px"
+        }
+
+        let refreshWrapper = (func) => {
+            // refresh 装饰器
+            return function (...args) {
+                let result = func(...args)
+                refresh()
+
+                // 重置自动滚动
+                // clearInterval(autoTimer)
+                // autoTimer = createAuto()
+                // return result
+                // 本轮播图不需要自动滚动，所以这部分代码被注释了
+
+            }
+        }
+
+        let leftShift = refreshWrapper(() => {
+            index--
+        })
+
+        let rightShift = refreshWrapper(() => {
+            index++
+        })
+
+        refresh()
+    </script>
+    <!-- 轮播图用到的动画 -->
+
+    <script type="text/javascript" src="../JS/sc-interaction.js"></script>
+    <!-- 引入用jquery写的交互 -->
+
+    <!-- <script type="text/javascript" src="../JS/gifMaker.js"></script> -->
+    <!-- gifMaker可能确实不需要了，写在sc-ineraction里面了 -->
+</body>
+</html>
